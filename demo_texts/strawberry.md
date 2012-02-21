@@ -11,7 +11,7 @@ Artificial strawberry aroma is also widely used in many industrialized food
 products.
 
 *Text retrieved 2012-02-05 CET from [Wikipedia][1]. Strawberry graphics © 2008
-by [chrisdesign][2] under a [Creative Commons Attribution 2.0 Germany
+by [chrisdesign][2], licensed under a [Creative Commons Attribution 2.0 Germany
 License][3].*
 
 [1]: http://en.wikipedia.org/wiki/Garden_strawberry

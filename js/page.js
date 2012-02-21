@@ -1,4 +1,4 @@
-// For the demo page.
+// Functionality for the page that embeds the presentation.
 //
 // Notes:
 //

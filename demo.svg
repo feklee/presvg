@@ -329,19 +329,19 @@
 			z"/>
 	</g>
 	
-		<image overflow="visible" width="945" height="378" xlink:href="demo_images/banana.jpg"  transform="matrix(0.0158364 0.2170401 0.22583 -0.0164778 528 93.7880936)">
+		<image overflow="visible" width="945" height="378" xlink:href="demo_images/banana.jpg"  transform="matrix(0.0158363 0.2170402 0.2258302 -0.0164775 528 93.7924881)">
 	</image>
 </g>
 <g id="frames">
-	<polyline id="bowlWithFruits" fill="none" stroke="#000000" stroke-width="6.4136252" stroke-miterlimit="10" points="
+	<polyline id="bowlWithFruits" fill="none" stroke="#000000" stroke-width="6.41363" stroke-miterlimit="10" points="
 		112.9999924,21.0000076 695.7675781,21.0000076 695.7675781,569.8681641 112.9999924,569.8681641 112.9999924,81.9853592 	"/>
-	<polyline id="strawberry" fill="none" stroke="#000000" stroke-width="1.2862961" stroke-miterlimit="10" points="
+	<polyline id="strawberry" fill="none" stroke="#000000" stroke-width="1.2862999" stroke-miterlimit="10" points="
 		487.0224609,131.2915192 357.3203125,149.5112457 343.6533203,52.2353592 473.3564453,34.0146561 485.5029297,120.4829178 	"/>
-	<polyline id="banana" fill="none" stroke="#000000" stroke-width="2.0007465" stroke-miterlimit="10" points="
+	<polyline id="banana" fill="none" stroke="#000000" stroke-width="2.0007501" stroke-miterlimit="10" points="
 		460.0908203,273.7988281 533.9707031,68.2041092 668.0605469,116.3828201 594.1826172,321.9785156 474.9912109,279.1499023 	"/>
-	<polyline id="about" fill="none" stroke="#000000" stroke-width="0.3076571" stroke-miterlimit="10" points="
+	<polyline id="about" fill="none" stroke="#000000" stroke-width="0.307657" stroke-miterlimit="10" points="
 		651.5742188,327.0302734 681.984375,327.0302734 681.984375,351.2333984 651.5742188,351.2333984 651.5742188,329.7197266 	"/>
-	<polyline id="apple" fill="none" stroke="#000000" stroke-width="0.7352507" stroke-miterlimit="10" points="
+	<polyline id="apple" fill="none" stroke="#000000" stroke-width="0.735251" stroke-miterlimit="10" points="
 		217.4453125,219.5571442 293.7539063,184.5205231 314.6430664,230.0166168 238.3344727,265.0527344 219.7661133,224.6118317 	"/>
 </g>
 </svg>

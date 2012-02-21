@@ -1,14 +1,15 @@
 Images
 ======
 
-* banana.jpg: Photographed and cut out by Maria Morillas. Public Domain.
+* banana.jpg: Copyright 2012 by Maria Morillas, licensed under a [Creative
+  Commons Attribution 3.0 Spain License][2].
 
 
 Legal
 =====
 
 Unless noted otherwise, all images and this file are copyright 2012 [Felix E.
-Klee][1].
+Klee][2].
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
@@ -22,4 +23,5 @@ CONDITIONS OF ANY KIND, either express or implied. See the License for the
 specific language governing permissions and limitations under the License.
 
 
-[1]: mailto:felix.klee@inka.de
+[1]: http://creativecommons.org/licenses/by/3.0/es/
+[2]: mailto:felix.klee@inka.de

@@ -45,11 +45,13 @@ Similar tools
 Demo
 ====
 
+Try it [live on github][5]. Details:
+
 * Start page: `demo.html`
 
 * The demo needs to be hosted on a web server.
 
-  Suggestion for users of [Dropbox][5]: Just put the current directory into
+  Suggestion for users of [Dropbox][6]: Just put the current directory into
   your `Public` folder, and then open the public URL of `demo.html` in a
   browser.
 
@@ -76,7 +78,7 @@ Suggested steps
 
   - Name: frame ID + `.md`
 
-  - File format: [Markdown][6]
+  - File format: [Markdown][7]
 
   - Character encoding: UTF-8
 
@@ -197,6 +199,15 @@ FAQ - Frequently Asked Questions
 
   Try printing from another browser.
 
+* What can I do if images that I linked from the SVG not loaded?
+
+  Make sure that the SVG is in the same directory as the HTML file of the
+  presentation. The reason is that image paths are interpreted as relative to
+  the HTML file, not as relative to the SVG.
+
+  If that doesn't solve the problem, then load the SVG directly into the
+  browser.
+
 
 The *pres/v/g* API
 ==================
@@ -208,14 +219,14 @@ freely design the user interface. Usage:
 
   - `js/presvg.js`
 
-  - [jQuery][7] 1.7 or compatible
+  - [jQuery][8] 1.7 or compatible
 
-  - [jQuery SVG][8] 1.4.4 or compatible: `jquery.svg.css`, `jquery.svg.js`,
+  - [jQuery SVG][9] 1.4.4 or compatible: `jquery.svg.css`, `jquery.svg.js`,
     `jquery.svgdom.js`
 
-  - [jQuery Footnote Links][9]: `footnote-links.js`
+  - [jQuery Footnote Links][10]: `footnote-links.js`
 
-  - [Pagedown][10]: `Markdown.Converter.js`, `Markdown.Sanitizer.js`
+  - [Pagedown][11]: `Markdown.Converter.js`, `Markdown.Sanitizer.js`
 
 * Use the functions exposed by the objects `presvg.interactive` and
   `presvg.print`.
@@ -244,7 +255,7 @@ Coding conventions:
     with maximally 50 characters. It is followed by an optional empty line plus
     body, with a maximum line length of 72 characters.
 
-  - Use [Markdown][6] syntax like in the current file.
+  - Use Markdown syntax like in the current file.
 
 Regularly test:
 
@@ -266,7 +277,7 @@ Regularly test:
 Legal
 =====
 
-Copyright 2012 [Felix E. Klee][11]
+Copyright 2012 [Felix E. Klee][14]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
@@ -284,12 +295,13 @@ specific language governing permissions and limitations under the License.
 [2]: http://prezi.com/
 [3]: http://sozi.baierouge.fr/
 [4]: http://inkscape.org/
-[5]: http://www.dropbox.com
-[6]: http://daringfireball.net/projects/markdown/syntax
-[7]: http://jquery.com/
-[8]: http://keith-wood.name/svg.html
-[9]: https://github.com/dompuiu/jquery-footnote-links
-[10]: http://code.google.com/p/pagedown/
-[11]: mailto:felix.klee@inka.de
+[5]: http://feklee.github.com/presvg/demo.html
+[6]: http://www.dropbox.com
+[7]: http://daringfireball.net/projects/markdown/syntax
+[8]: http://jquery.com/
+[9]: http://keith-wood.name/svg.html
+[10]: https://github.com/dompuiu/jquery-footnote-links
+[11]: http://code.google.com/p/pagedown/
 [12]: http://www.jslint.com/
 [13]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+[14]: mailto:felix.klee@inka.de

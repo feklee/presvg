@@ -14,8 +14,9 @@ new understandings of disease control and selective breeding in apple
 production.
 
 *Text retrieved 2012-02-21 CET from [Wikipedia][1]. Apple graphics © 2008 by
-[chrisdesign][2] under a [Creative Commons Attribution 2.0 Germany License][3].
-Video © 2010 by [markr041][4] under a Standard YouTube License.*
+[chrisdesign][2], licensed under a [Creative Commons Attribution 2.0 Germany
+License][3]. Video © 2010 by [markr041][4], licensed under a Standard YouTube
+License.*
 
 [1]: http://en.wikipedia.org/wiki/Apple
 [2]: http://chrisdesign.wordpress.com/2008/01/08/vector-fruits-svg/

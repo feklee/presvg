@@ -28,7 +28,8 @@ their fruit, and to a lesser extent to make fiber, banana wine and as
 ornamental plants.
 
 *Text retrieved 2012-02-21 CET from [Wikipedia][1]. Banana graphics © 2012 by
-Maria Morillas under a [Creative Commons Attribution 3.0 Spain License][2].*
+Maria Morillas, licensed under a [Creative Commons Attribution 3.0 Spain
+License][2].*
 
 [1]: http://en.wikipedia.org/wiki/Banana
 [2]: http://creativecommons.org/licenses/by/3.0/es/
