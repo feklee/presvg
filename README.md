@@ -18,7 +18,7 @@ What's in it for you
 
 * Print presentations.
 
-* Host presentations anywhere you like. *You own all data!*
+* Host presentations anywhere you like. *Your data belongs to you!*
 
 * View presentations with any modern HTML5 web browser. No plugins such as
   Flash are required.
