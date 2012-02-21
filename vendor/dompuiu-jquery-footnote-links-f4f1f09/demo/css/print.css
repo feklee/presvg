@@ -1,0 +1,35 @@
+body {
+    background: #fff;
+    color: #000;
+}
+
+.canvas {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.right-menu {
+    display: none;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+table {
+    color: #000;
+}
+
+table td,
+table th {
+    background: none !important;
+    border: 1px solid #000 !important;
+    border-collapse: collapse !important;
+    color: #000 !important;
+}
+
+.noprint {
+    display: none;
+}

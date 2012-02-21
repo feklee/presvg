@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Settings for the presentation: -->
+    <script type="text/javascript">
+      var settings = {
+          dataUrl: 'demo', // directory with SVG, texts, ...
+
+          // presentation path as sequence of frame IDs:
+          path: ['strawberry', 'banana', 'apple', 'bowlWithFruits', 'about'],
+
+          youTube: {
+              // frames with a YouTube video ID show the corresponding video:
+              videoIds: { apple: 'gGQWan9d1v0' }
+          }
+      }
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link type="text/css" rel="stylesheet"
+          href="vendor/jquery-ui/css/smoothness/jquery-ui-1.8.17.custom.css">	
+
+    <script type="text/javascript" src="vendor/jquery-1.7.1.min.js"></script>
+
+    <!-- From the jQuery SVG documentation: "To use the jQuery SVG plugin
+         include the CSS and the Javascript in the head section of your page."
+         -->
+    <link rel="stylesheet" 
+          href="vendor/jquery.svg.package-1.4.4/jquery.svg.css">
+    <script type="text/javascript" 
+            src="vendor/jquery.svg.package-1.4.4/jquery.svg.js"></script>
+    <script type="text/javascript" 
+            src="vendor/jquery.svg.package-1.4.4/jquery.svgdom.js"></script>
+
+    <script type="text/javascript" src="vendor/jquery.ba-bbq.min.js"></script>
+
+    <!-- As of August 2011, the Modernizr documentation states: "Drop the
+         script tags in the <head> of your HTML. For best performance, you
+         should have them follow after your stylesheet references. The reason
+         we recommend placing Modernizr in the head is two-fold: the HTML5 Shiv
+         (that enables HTML5 elements in IE) must execute before the <body>,
+         and if you’re using any of the CSS classes that Modernizr adds, you’ll
+         want to prevent a FOUC. -->
+    <script type="text/javascript" 
+            src="vendor/modernizr.custom.90874.js"></script>
+  </head>
+
+  <body>
+    <img id="loadIndicator" src="images/load_indicator.gif" alt="Loading...">
+	<p id="errorBar" class="ui-state-error ui-corner-all">
+      <span class="ui-icon ui-icon-alert"></span> 
+	  <strong>Error:</strong> <span id="errorMessage"></span>
+    </p>
+    <div id="presentation">
+      <div id="svgContainer"></div>
+      <div id="textContainer"></div>
+      <div id="navigationBar">
+        <button id="previousButton">Previous</button>
+        <button id="nextButton">Next</button>
+        <button id="svgViewButton">SVG View</button>
+        <button id="printViewButton">Print View</button>
+        <div id="slider"></div>
+      </div>
+      <div id="documentContainer"></div>
+      <p id="info">
+        Presentation created with 
+        <a href="http://github.com/feklee/presvg">pres/v/g</a>.
+      </p>
+    </div>
+
+    <!-- Scripts that don't need to be in the head go here to increase initial
+         page load. -->
+    <script type="text/javascript" 
+            src="vendor/jquery-ui/js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script 
+       type="text/javascript"
+       src="vendor/dompuiu-jquery-footnote-links-f4f1f09/src/footnote-links.js"
+       ></script>
+    <script type="text/javascript" 
+            src="vendor/pagedown/Markdown.Converter.js"></script>
+    <script type="text/javascript" 
+            src="vendor/pagedown/Markdown.Sanitizer.js"></script>
+    <script type="text/javascript"
+            src="vendor/jeresig-jquery.hotkeys-0451de1/jquery.hotkeys.js">
+    </script>
+    <script type="text/javascript" src="js/presvg.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+/* Copyright 2012 Felix E. Klee <felix.klee@inka.de>
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License. */
+
+@import url(reset.css);
+
+
+/* all views, mixed */
+
+html {
+    position: relative;
+
+    /* to center load indicator: */
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+
+    /* to center load indicator: */
+    width: 100%;
+    height: 100%;
+}
+
+#errorBar, #info, html.defaultView #textContainer, 
+html.defaultView #navigationContainer, html.printView #documentContainer {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+#errorBar, #loadIndicator, #svgContainer, #textContainer, #navigationBar, 
+#info {
+    position: absolute;
+}
+
+#loadIndicator {
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+}
+
+#errorBar {
+    top: 5px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    padding: 5px;
+    display: none;
+}
+
+#errorBar span.ui-icon {
+    float: left;
+    margin-right: .3em;
+}
+
+#presentation {
+    visibility: hidden;
+}
+
+#info a {
+    font-style: italic;
+}
+
+h1, p, ol, ul, li, address, blockquote, html.printView div.footnoteLinks h2 {
+    margin: 0 0 0.8em 0;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol, ul, address, blockquote {
+    margin-left: 1.6em;
+}
+
+ol, ul {
+    list-style-position: outside;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: square;
+}
+
+p.notLoadedMessage {
+    color: red;
+}
+
+code {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, 
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+sub, sup {
+    line-height: 1em;
+}
+
+
+/* default view => user interface with text container, navigation bar, etc. */
+
+html.defaultView {
+    min-width: 1006px;
+    min-height: 562px;
+}
+
+html.defaultView body {
+    left: 50%;
+    top: 50%;
+    width: 1006px;
+    height: 562px;
+    margin: -281px 0 0 -503px;
+}
+
+html.defaultView #svgContainer {
+    padding: 4px;
+
+    /* aspect ratio: 4:3 */
+    width: 660px;
+    height: 495px;
+}
+
+html.defaultView #navigationBar {
+    top: 503px;
+    left: 0;
+    padding: 4px;
+    font-size: 10px;
+    width: 660px;
+    height: 24px;
+}
+
+html.defaultView button.ui-button {
+    display: block;
+    margin: 0 2px;
+    vertical-align: bottom;
+    width: 24px;
+    height: 24px;
+}
+
+html.defaultView #previousButton, #nextButton {
+    float: left;
+}
+
+html.defaultView #nextButton {
+    margin-right: 4px;
+}
+
+html.defaultView #printViewButton, html.defaultView #svgViewButton {
+    float: right;
+}
+
+html.defaultView #printViewButton {
+    margin-left: 4px;
+}
+
+html.defaultView #slider {
+    margin: 7px 0 0 63px;
+    width: 529px;
+    line-height: 30px;
+    vertical-align: bottom;
+}
+
+html.defaultView #info {
+    top: 541px;
+    left: 0;
+    padding: 4px;
+    width: 998px;
+    height: 12px;
+    text-align: center;
+
+    color: #666;
+    font-size: 10px;
+}
+
+html.defaultView #textContainer {
+    left: 668px;
+    width: 330px;
+    height: 527px;
+    padding: 4px 4px 0 4px;
+    overflow: auto;
+
+    color: #666;
+}
+
+html.defaultView #textContainer>* {
+    margin-right: 4px; /* necessary when scroll bar appears */
+}
+
+html.defaultView #textContainer a, #textContainer a:link,
+html.defaultView #textContainer a:visited,
+html.defaultView #textContainer a:focus,
+html.defaultView #info a, html.defaultView #info a:link,
+html.defaultView #info a:visited,
+html.defaultView #info a:focus {
+    color: #66f;
+}
+
+html.defaultView #textContainer a:hover,
+html.defaultView #textContainer a:active,
+html.defaultView #info a:hover,
+html.defaultView #info a:active {
+    color: #00f;
+}
+
+
+/* svg view => only SVG is shown, across the entire window */
+
+html.svgView #svgContainer {
+    width: 100%;
+    height: 100%;
+}
+
+html.svgView #textContainer, html.svgView #navigationBar, 
+html.svgView #info {
+    display: none;
+}
+
+
+/* print view => frames layed out for printing */
+
+html.printView #documentContainer {
+    font-size: 10pt;
+    line-height: 1.5em;
+}
+
+html.printView #svgContainer, html.printView #textContainer, 
+html.printView #navigationBar {
+    display: none;
+}
+
+html.printView #documentContainer {
+    width: 12.6cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html.printView #info {
+    position: static;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 0.3cm;
+}
+
+html.printView div.frame, html.printView div.footnoteLinks {
+    margin: 0.3cm 0;
+    border: 1pt solid #aaa;
+    padding: 0.3cm;
+}
+
+html.printView div.footnoteLinks li {
+    margin: 0;
+}
+
+html.printView div.footnoteLinks ol {
+    margin-bottom: 0;
+}
+
+html.printView div.frame:last-child {
+    border-bottom: none;
+}
+
+html.printView div.svg {
+    margin: 0 auto;
+    width: 12cm;
+    height: 9cm;
+}
+
+html.printView a, html.printView a:link, html.printView a:visited, 
+html.printView a:hover, html.printView a:active, html.printView a:focus {
+    color: black;
+}
+
+html.printView sup {
+    vertical-align: super;
+    font-size: 0.8em;
+    padding-left: 0.1em;
+}
+
+html.printView #info a:link:after, html.printView #info a:visited:after {
+    content:" <" attr(href) ">";
+}
