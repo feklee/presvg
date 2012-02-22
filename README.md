@@ -4,7 +4,7 @@ Introduction
 *pres/v/g* is a tool for giving presentations and making them accessible on the
 web, together with annotations.
 
-Download [on github][1]. For a demo, see below.
+Download [on GitHub][1]. For a demo, see below.
 
 
 What's in it for you
@@ -45,7 +45,7 @@ Similar tools
 Demo
 ====
 
-Try it [live on github][5]. Details:
+Try it [live on GitHub][5]. Details:
 
 *   Start page: `demo.html`
 
