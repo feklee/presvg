@@ -1,14 +1,14 @@
 Images
 ======
 
-* load_indicator.gif: Created with [ajaxload][1] ("Generated gifs are totally
-  free for use").
+*   load_indicator.gif: Created with [ajaxload][1] ("Generated gifs are totally
+    free for use").
 
 
 Legal
 =====
 
-Unless noted otherwise, all images and this file are copyright 2012 [Felix E.
+Unless noted otherwise, all images and this file are copyright 2012 [Felix E. 
 Klee][2].
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use

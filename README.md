@@ -10,36 +10,36 @@ Download [on github][1].
 What's in it for you
 --------------------
 
-* Create modern, engaging presentations with information laid out graphically
-  on a virtual canvas.
+*   Create modern, engaging presentations with information laid out graphically
+    on a virtual canvas.
 
-* Annotate presentations so that they can be viewed unattended. Or create notes
-  to assist you when giving a presentation.
+*   Annotate presentations so that they can be viewed unattended. Or create 
+    notes to assist you when giving a presentation.
 
-* Print presentations.
+*   Print presentations.
 
-* Host presentations anywhere you like. *Your data belongs to you!*
+*   Host presentations anywhere you like. *Your data belongs to you!*
 
-* View presentations with any modern HTML5 web browser. No plugins such as
-  Flash are required.
+*   View presentations with any modern HTML5 web browser. No plugins such as
+    Flash are required.
 
-* Author presentations with the tools of your choice. All graphics programs
-  that export well-formatted SVG are supported.
+*   Author presentations with the tools of your choice. All graphics programs
+    that export well-formatted SVG are supported.
 
-* Use the *pres/v/g* API to create your own user interface for presentations.
+*   Use the *pres/v/g* API to create your own user interface for presentations.
 
-* *Open Source*
+*   *Open Source*
 
 
 Similar tools
 -------------
 
-* [Prezi][2]: Popularized presentation using a virtual canvas. Proprietary
-  cloud-based software with integrated editor. Strong vendor lock-in. Requires
-  Flash to view presentations on the web.
+*   [Prezi][2]: Popularized presentation using a virtual canvas. Proprietary
+    cloud-based software with integrated editor. Strong vendor lock-in.
+    Requires Flash to view presentations on the web.
 
-* [Sozi][3]: A plugin for [Inkscape][4] to create presentations in SVG. Open
-  Source.
+*   [Sozi][3]: A plugin for [Inkscape][4] to create presentations in SVG. Open
+    Source.
 
 
 Demo
@@ -47,19 +47,19 @@ Demo
 
 Try it [live on github][5]. Details:
 
-* Start page: `demo.html`
+*   Start page: `demo.html`
 
-* The demo needs to be hosted on a web server.
+*   The demo needs to be hosted on a web server.
 
-  Suggestion for users of [Dropbox][6]: Just put the current directory into
-  your `Public` folder, and then open the public URL of `demo.html` in a
-  browser.
+    Suggestion for users of [Dropbox][6]: Just put the current directory into
+    your `Public` folder, and then open the public URL of `demo.html` in a
+    browser.
 
-* Keyboard navigation:
+*   Keyboard navigation:
 
-  - right arrow, page down: next frame
+      - right arrow, page down: next frame
 
-  - left arrow, page up: previous frame
+      - left arrow, page up: previous frame
 
 
 Authoring presentations
@@ -68,145 +68,140 @@ Authoring presentations
 Suggested steps
 ---------------
 
-1. Create SVG: `presentation.svg`
+1.  Create SVG: `presentation.svg`
 
-  See below for example steps on how to create the SVG.
+    See below for example steps on how to create the SVG.
 
-2. Create directory for texts: `presentation_texts`
+2.  Create directory for texts: `presentation_texts`
 
-3. For each frame ID, create a text file:
+3.  For each frame ID, create a text file:
 
-  - Name: frame ID + `.md`
+    -   Name: frame ID + `.md`
 
-  - File format: [Markdown][7]
+    -   File format: [Markdown][7]
 
-  - Character encoding: UTF-8
+    -   Character encoding: UTF-8
 
-  Names of text files are all lower-case. Rules by example:
+    Names of text files are all lower-case. Rules by example:
 
-  - Text file for ID `this-is_4_you`: `this-is_4_you.md`
+    -   Text file for ID `this-is_4_you`: `this-is_4_you.md`
 
-  - Text file for ID `this-Is4You`: `this-is_4_you.md`
+    -   Text file for ID `this-Is4You`: `this-is_4_you.md`
 
-4. Copy `demo.html` to: `presentation.html`
+4.  Copy `demo.html` to: `presentation.html`
 
-5. Edit settings at the top of: `presentation.html`
-
-  You may specify per frame in the settings if it should be treated as rotated
-  by a multiple of 90° (in addition to any rotation in the SVG). Example use
-  case: You create a rectangle sized 50×100 px in Illustrator CS5, and then you
-  rotate it by 90°. Illustrator will store the result not as a rotated
-  rectangle but as a rectangle of size 100×50 px. Since the information about
-  the rotation is lost, you need to specify it manually as a rotated by: `90`
+5.  Edit settings at the top of: `presentation.html`
 
 
 Suggested steps to create SVG in Inkscape 0.48
 ----------------------------------------------
 
-1. Create graphics.
+1.  Create graphics.
 
-2. Convert text into outlines via menu: *Path / Object to Path*
+2.  Convert text into outlines via menu: *Path / Object to Path*
 
-3. Create frames. For each frame:
+3.  Create frames. For each frame:
 
-  1. From `demo.svg` copy a frame border, which is a rectangle with a hole.
+    1.  From `demo.svg` copy a frame border, which is a rectangle with a hole.
 
-  2. Transform the frame border into place.
+    2.  Transform the frame border into place.
 
-  3. Set a frame ID via menu: *Object / Object Properties... / Id*
+    3.  Set a frame ID via menu: *Object / Object Properties... / Id*
 
-4. Save as Plain SVG via menu: *File / Save a Copy...*
+4.  Save as Plain SVG via menu: *File / Save a Copy...*
 
 
 Suggested steps to create SVG in Illustrator CS5
 ------------------------------------------------
 
-1. Set in preferences:
+1.  Set in preferences:
 
     *Units / Identify Objects by: XML ID*
 
-  Then XML IDs of frames are the same as the labels of the corresponding
-  objects in Illustrator.
+    Then XML IDs of frames are the same as the labels of the corresponding
+    objects in Illustrator.
 
-2. Create graphics.
+2.  Create graphics.
 
-3. Create frames. For each frame:
+3.  Create frames. For each frame:
 
-  1. From `demo.svg` copy a frame border, which is a rectangle with a hole.
+    1.  From `demo.svg` copy a frame border, which is a rectangle with a hole.
 
-  2. Transform the frame border into place.
+    2.  Transform the frame border into place.
 
-  3. In the layers panel, give the frame border a name. This name is the ID of
-    the corresponding frame in the presentation. Note that spaces are not
-    allowed in the ID.
+    3.  In the layers panel, give the frame border a name. This name is the ID
+        of the corresponding frame in the presentation. Note that spaces are 
+        not allowed in the ID.
 
-4. Export as SVG via menu: *File / Save a Copy...*
+4.  Export as SVG via menu: *File / Save a Copy...*
 
-  Suggested options:
+    Suggested options:
 
-  - SVG Profiles: SVG 1.1
+    -   SVG Profiles: SVG 1.1
 
-  - Fonts / Type: Convert to outline
+    -   Fonts / Type: Convert to outline
 
-  - Images / Location: Link
+    -   Images / Location: Link
 
-  - CSS Properties: Presentation Attributes
+    -   CSS Properties: Presentation Attributes
 
-  - Decimal Places: 7 (for deep zooming with high precision)
+    -   Decimal Places: 7 (for deep zooming with high precision)
 
-  - Encoding: Unicode (UTF-8)
+    -   Encoding: Unicode (UTF-8)
 
 
 FAQ - Frequently Asked Questions
 ================================
 
-* My SVG doesn't load into *pres/v/g* - what to do?
+*   My SVG doesn't load into *pres/v/g* - what to do?
 
-  Try loading the SVG directly into the browser, and look out for error
-  messages. If there are none, then double check your *pres/v/g* settings.
+    Try loading the SVG directly into the browser, and look out for error
+    messages. If there are none, then double check your *pres/v/g* settings.
 
-* Why not use a closed retangle as a frame border?
+*   Why not use a closed retangle as a frame border?
 
-  The frame border needs to be assymetric in order to preserve rotation, at
-  least in Illustrator CS5. Suppose you draw a 10×5 px rectangle and rotate it
-  by 90°. Then Illustrator CS5 will create a 5×10 px rectangle, thereby
-  removing information about the rotation.
+    The frame border needs to be assymetric in order to preserve rotation, at
+    least in Illustrator CS5. Suppose you draw a 10×5 px rectangle and rotate
+    it by 90°. Then Illustrator CS5 will create a 5×10 px rectangle, thereby
+    removing information about the rotation.
 
-* What requirements does a valid frame border have to fullfill?
+*   What requirements does a valid frame border have to fullfill?
 
-  Use a poly line, with at least two segments, joined in a right angle. The
-  minimum frame border looks as follows, with the first point in the lower left
-  corner:
+    Use a poly line, with at least two segments, joined in a right angle. The
+    minimum frame border looks as follows, with the first point in the lower
+    left corner:
 
         1-----2
               |
               3
 
-  All other line segments are ignored, meaning that you can as well draw the
-  frame border as follows:
+    All other line segments are ignored, meaning that you can as well draw the
+    frame border as follows:
 
         1-----2
         5     |
         |     |
         4-----3
 
-* Why doesn't my SVG render correctly?
+*   Why doesn't my SVG render correctly?
 
-  As of early 2012, browser support for SVG is still not perfect. Make sure
-  that your browser is at the latest version. Also try with another browser.
+    As of early 2012, browser support for SVG is still not perfect. Make sure
+    that your browser is at the latest version. Also try with another browser.
 
-* Why doesn't the SVG print from my browser?
+*   Why doesn't the SVG print well from my browser?
 
-  Try printing from another browser.
+    As of February 2012, many browsers are still not good at printing SVG.
+    Comparing Chrome 17.0, Opera 11.61, and Firefox 10.0: Firefox produces the
+    best printout of the demo.
 
-* What can I do if images that I linked from the SVG not loaded?
+*   What can I do if images that I linked from the SVG not loaded?
 
-  Make sure that the SVG is in the same directory as the HTML file of the
-  presentation. The reason is that image paths are interpreted as relative to
-  the HTML file, not as relative to the SVG.
+    Make sure that the SVG is in the same directory as the HTML file of the
+    presentation. The reason is that image paths are interpreted as relative to
+    the HTML file, not as relative to the SVG.
 
-  If that doesn't solve the problem, then load the SVG directly into the
-  browser.
+    If that doesn't solve the problem, then load the SVG directly into the
+    browser.
 
 
 The *pres/v/g* API
@@ -215,23 +210,23 @@ The *pres/v/g* API
 With the *pres/v/g* API you can embed presentations into your web-site, and
 freely design the user interface. Usage:
 
-* Include:
+*   Include:
 
-  - `js/presvg.js`
+    -   `js/presvg.js`
 
-  - [jQuery][8] 1.7 or compatible
+    -   [jQuery][8] 1.7 or compatible
 
-  - [jQuery SVG][9] 1.4.4 or compatible: `jquery.svg.css`, `jquery.svg.js`,
-    `jquery.svgdom.js`
+    -   [jQuery SVG][9] 1.4.4 or compatible: `jquery.svg.css`, `jquery.svg.js`,
+        `jquery.svgdom.js`
 
-  - [jQuery Footnote Links][10]: `footnote-links.js`
+    -   [jQuery Footnote Links][10]: `footnote-links.js`
 
-  - [Pagedown][11]: `Markdown.Converter.js`, `Markdown.Sanitizer.js`
+    -   [Pagedown][11]: `Markdown.Converter.js`, `Markdown.Sanitizer.js`
 
-* Use the functions exposed by the objects `presvg.interactive` and
-  `presvg.print`.
+*   Use the functions exposed by the objects `presvg.interactive` and
+    `presvg.print`.
 
-* See `js/page.js` as an example of using the API.
+*   See `js/page.js` as an example of using the API.
 
 
 Development
@@ -239,39 +234,37 @@ Development
 
 Coding conventions:
 
-* Maximum line length: 79 characters
+*   Maximum line length: 79 characters
 
-* JavaScript:
+*   JavaScript:
 
-  - Files need to validate with [JSLint][12].
+    -   Files need to validate with [JSLint][12].
 
-  - Identifiers are written in camel case. The first character is in lower
-    case, except for constructors where it is in upper case.
+    -   Identifiers are written in camel case. The first character is in lower
+        case, except for constructors where it is in upper case.
 
-* Git commit:
+*   Git commit:
 
-  - Adhere to the model commit message from the article [A Note About Git
-    Commit Messages][13]. That message contains a summary on the first line,
-    with maximally 50 characters. It is followed by an optional empty line plus
-    body, with a maximum line length of 72 characters.
-
-  - Use Markdown syntax like in the current file.
+    -   Adhere to the model commit message from the article [A Note About Git
+        Commit Messages][13]. That message contains a summary on the first 
+        line, with maximally 50 characters. It is followed by an optional empty
+        line plus body, with a maximum line length of 72 characters.
 
 Regularly test:
 
-* Demo: Do rotations work? Are scroll bars in long text OK? Does video playback
-  work?etc.
+*   Demo: Do rotations work? Are scroll bars in long text OK? Does video 
+    playback work? etc.
 
-* If a text file is missing, a corresponding message should be displayed *in
-  the text box*. There should be no fatal error.
+*   If a text file is missing, a corresponding message should be displayed *in
+    the text box*. There should be no fatal error.
 
-* Error messages should appear when:
+*   Error messages should appear when:
 
-  - SVG cannot be loaded,
+    -   SVG cannot be loaded,
 
-  - settings contain a frame that doesn't exists in SVG,
+    -   settings contain a frame that doesn't exists in SVG,
 
-  - required settings are missing.
+    -   required settings are missing.
 
 
 Legal

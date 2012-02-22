@@ -1,8 +1,8 @@
 Images
 ======
 
-* banana.jpg: Copyright 2012 by Maria Morillas, licensed under a [Creative
-  Commons Attribution 3.0 Spain License][2].
+*   banana.jpg: Copyright 2012 by Maria Morillas, licensed under a [Creative
+    Commons Attribution 3.0 Spain License][2].
 
 
 Legal
