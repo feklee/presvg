@@ -4,7 +4,7 @@ Introduction
 *pres/v/g* is a tool for giving presentations and making them accessible on the
 web, together with annotations.
 
-Download [on github][1].
+Download [on github][1]. For a demo, see below.
 
 
 What's in it for you
@@ -150,10 +150,10 @@ Suggested steps to create SVG in Illustrator CS5
     -   Encoding: Unicode (UTF-8)
 
 
-FAQ - Frequently Asked Questions
+FAQ – Frequently Asked Questions
 ================================
 
-*   My SVG doesn't load into *pres/v/g* - what to do?
+*   My SVG doesn't load into *pres/v/g* – what to do?
 
     Try loading the SVG directly into the browser, and look out for error
     messages. If there are none, then double check your *pres/v/g* settings.
@@ -165,10 +165,10 @@ FAQ - Frequently Asked Questions
     it by 90°. Then Illustrator CS5 will create a 5×10 px rectangle, thereby
     removing information about the rotation.
 
-*   What requirements does a valid frame border have to fullfill?
+*   What are the requirements when draing a frame border?
 
-    Use a poly line, with at least two segments, joined in a right angle. The
-    minimum frame border looks as follows, with the first point in the lower
+    Use a poly line with at least two segments, joined in a right angle. The
+    minimum frame border looks as follows, with the first point in the upper
     left corner:
 
         1-----2
@@ -183,32 +183,30 @@ FAQ - Frequently Asked Questions
         |     |
         4-----3
 
-*   Why doesn't my SVG render correctly?
-
-    As of early 2012, browser support for SVG is still not perfect. Make sure
-    that your browser is at the latest version. Also try with another browser.
-
-*   Why doesn't the SVG print well from my browser?
-
-    As of February 2012, many browsers are still not good at printing SVG.
-    Comparing Chrome 17.0, Opera 11.61, and Firefox 10.0: Firefox produces the
-    best printout of the demo.
-
-*   What can I do if images that I linked from the SVG not loaded?
+*   What can I do if images that I linked from my SVG are not loaded?
 
     Make sure that the SVG is in the same directory as the HTML file of the
     presentation. The reason is that image paths are interpreted as relative to
     the HTML file, not as relative to the SVG.
 
-    If that doesn't solve the problem, then load the SVG directly into the
+    If that does not solve the problem, then load the SVG directly into the
+    browser and check for error messages.
+
+*   Why doesn't my SVG render or print correctly?
+
+    As of February 2012, browser support for SVG is still not perfect. Make
+    sure that your browser is at the latest version. Also try with another
     browser.
+
+    Comparing Chrome 17.0, Opera 11.61, and Firefox 10.0: Firefox produces the
+    best printout of the demo.
 
 
 The *pres/v/g* API
 ==================
 
-With the *pres/v/g* API you can embed presentations into your web-site, and
-freely design the user interface. Usage:
+With the *pres/v/g* API you can embed presentations into your web-site. The
+user interface can be freely designed. Usage:
 
 *   Include:
 
@@ -223,34 +221,18 @@ freely design the user interface. Usage:
 
     -   [Pagedown][11]: `Markdown.Converter.js`, `Markdown.Sanitizer.js`
 
-*   Use the functions exposed by the objects `presvg.interactive` and
-    `presvg.print`.
+*   Use the functions `presvg.interactive()` and `presvg.print()`.
 
-*   See `js/page.js` as an example of using the API.
+*   For an example on using the API, see: `js/page.js`
 
 
 Development
 ===========
 
-Coding conventions:
+Tests
+-----
 
-*   Maximum line length: 79 characters
-
-*   JavaScript:
-
-    -   Files need to validate with [JSLint][12].
-
-    -   Identifiers are written in camel case. The first character is in lower
-        case, except for constructors where it is in upper case.
-
-*   Git commit:
-
-    -   Adhere to the model commit message from the article [A Note About Git
-        Commit Messages][13]. That message contains a summary on the first 
-        line, with maximally 50 characters. It is followed by an optional empty
-        line plus body, with a maximum line length of 72 characters.
-
-Regularly test:
+Regularly check:
 
 *   Demo: Do rotations work? Are scroll bars in long text OK? Does video 
     playback work? etc.
@@ -265,6 +247,38 @@ Regularly test:
     -   settings contain a frame that doesn't exists in SVG,
 
     -   required settings are missing.
+
+
+Versioning
+----------
+
+The version of releases is structured as:
+
+*major.minor.bugfix*
+
+
+Coding conventions
+------------------
+
+Maximum line length: 79 characters
+
+JavaScript:
+
+*   Files need to validate with [JSLint][12].
+
+*   Identifiers are written in camel case. The first character is in lower
+    case, except for constructors where it is in upper case.
+
+Git:
+
+*   Tag every release with the version prefixed by a *v*. Example:
+
+    *v1.2.3*
+
+*   Adhere to the model commit message from the article [A Note About Git
+    Commit Messages][13]. That message contains a summary on the first line, 
+    with maximally 50 characters. It is followed by an optional empty line plus
+    body, with a maximum line length of 72 characters.
 
 
 Legal
