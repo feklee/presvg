@@ -82,12 +82,6 @@ Suggested steps
 
     -   Character encoding: UTF-8
 
-    Names of text files are all lower-case. Rules by example:
-
-    -   Text file for ID `this-is_4_you`: `this-is_4_you.md`
-
-    -   Text file for ID `this-Is4You`: `this-is_4_you.md`
-
 4.  Copy `demo.html` to: `presentation.html`
 
 5.  Edit settings at the top of: `presentation.html`
@@ -279,6 +273,12 @@ Git:
     Commit Messages][13]. That message contains a summary on the first line, 
     with maximally 50 characters. It is followed by an optional empty line plus
     body, with a maximum line length of 72 characters.
+
+*   For branches related to versions, prefix version numbers with a *b*. This
+    is to avoid ambiguity with GIT commands such as "checkout" that accept tags
+    and branches in the same parameter position. Example:
+    
+    *b1.2.3*
 
 
 Legal
