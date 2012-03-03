@@ -68,7 +68,8 @@ var page = (function () {
     }
 
     function otherInteractiveWindowExists() {
-        return otherInteractiveWindow !== null;
+        return (otherInteractiveWindow !== null &&
+                !otherInteractiveWindow.closed);
     }
 
     function otherInteractiveWindowPageIsReady() {

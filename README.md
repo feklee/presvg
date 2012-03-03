@@ -229,7 +229,7 @@ Tests
 Regularly check:
 
 *   Demo: Do rotations work? Are scroll bars in long text OK? Does video 
-    playback work? etc.
+    playback work? Are bitmap graphics displayed? etc.
 
 *   If a text file is missing, a corresponding message should be displayed *in
     the text box*. There should be no fatal error.
