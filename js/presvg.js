@@ -485,7 +485,8 @@ presvg.svg = function (settings) {
             return; // stops
         }
 
-        jQuerySvg.configure({}, true); // makes SVG as large as container
+        // makes SVG as large as container:
+        jQuerySvg.configure({ width: '100%', height: '100%' }, true);
 
         if (!frameGeometriesAreSet()) {
             if (!setFrameGeometries()) {
